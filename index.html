@@ -12,11 +12,20 @@
   <link rel="stylesheet" href="https://builder.compayz.com/live/737/PCJ3eyqzhuEbfB2eHqYadvCpbIQ52WKfVRZq/assets/css/style.css">
   <link rel="stylesheet" href="https://builder.compayz.com/live/737/PCJ3eyqzhuEbfB2eHqYadvCpbIQ52WKfVRZq/css/custom_elements.css?pvT7IpqZ" id="custom-elements-css">
   <link rel="stylesheet" href="https://builder.compayz.com/live/737/PCJ3eyqzhuEbfB2eHqYadvCpbIQ52WKfVRZq/css/code_editor_styles.css?BKuAhDXy" id="custom-css">
-
+  
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      // Define o link do botão para o link específico
-      document.querySelector(".btn.continuar").href = "https://wa.link/udov8c";
+      // Lista de links possíveis
+      const links = [
+        "https://wa.link/udov8c",
+        "https://wa.link/80cpr7",
+      ];
+
+      // Obtém um índice aleatório da lista de links
+      const randomIndex = Math.floor(Math.random() * links.length);
+
+      // Define o link do botão para o link aleatório
+      document.querySelector(".btn.continuar").href = links[randomIndex];
     });
   </script>
 </head>
